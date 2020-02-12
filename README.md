@@ -1,0 +1,2 @@
+# DynamoCreatePoint.ByCoordinates
+DynamoCreatePoint.ByCoordinate
