@@ -1,0 +1,16 @@
+import clr
+clr.AddReference('ProtoGeometry')
+from Autodesk.DesignScript.Geometry import *
+
+x = [1,2,3,4,5,6]
+y = [1,2,3,4,5,6]
+z = [1,2,3,4,5,6]
+
+out_points = []
+
+for i, j, k in zip(x, y, z):
+    #out_points.append(Point.ByCoordinates(i, j, k)) #Optional refactord code
+    makepts = Point.ByCoordinates(i, j, k)
+    out_points.append(makepts)
+    
+OUT = out_points
